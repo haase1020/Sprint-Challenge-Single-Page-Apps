@@ -12,7 +12,7 @@ const [query, setQuery]=useState(""); //Mandi: added useState
   axios
     .get(`https://rickandmortyapi.com/api/character/`)
     .then(response => {
-      console.log(response);
+      console.log("this is the response",response);
       const characters = response.data.filter(character =>
         character.name.toLowerCase().includes(query.toLowerCase())
       );
@@ -26,29 +26,10 @@ const [query, setQuery]=useState(""); //Mandi: added useState
   };
 
   return (
-    <section className="character-list">
-      <form className ='search'>
-        <input
-          type='text'
-          onChange={handleInputChange}
-          value={query}
-          name="name"
-          tabIndex="0"
-          autoComplete="off"
-          />
-      </form>
-      {data.map(data =>{
-        return (
-          <div className = "character-list" key={data._id}>
-
-            <h2>{data.name}</h2>
-            <h3 className="capital">Status: {data.status}</h3>
-            <h3 className="capital">Species: {data.species}</h3>
-          </div>
-        );
-      })}
-      
-    
-    </section>
+    <div>
+      <h2>Find</h2>
+      <SearchForm query = {query} handleInputChange = {handleInputChange}/>
+      <CharacterCard data = {data}/>
+    </div>
   );
 }
