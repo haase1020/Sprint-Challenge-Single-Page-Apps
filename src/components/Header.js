@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const HeaderNav = styled.nav`
+export const NavStyle = styled.nav`
 font-color: blue;
 justify-content: spaced-between;
 // align-items: center;
@@ -12,8 +12,8 @@ padding: 20px;
 
 `;
 
-export const HeaderDiv = styled.div`
-font-color: blue;
+export const HeaderStyle = styled.div`
+
 width: 28%;
 display: flex;
 
@@ -29,12 +29,12 @@ const Header = props =>{
   return (
     <header className = "ui centered">
       <h1 className = "ui center">Rick &amp; Morty Fan Page</h1>
-      <HeaderNav>
-        <HeaderDiv>
-          <Link to = "/">Home Page</Link>
+      <NavStyle>
+        <HeaderStyle>
+          <Link to = "/">Home</Link>
           <Link to = "/CharacterList">Characters</Link>
-        </HeaderDiv>
-      </HeaderNav>
+        </HeaderStyle>
+      </NavStyle>
 
     </header>
   );

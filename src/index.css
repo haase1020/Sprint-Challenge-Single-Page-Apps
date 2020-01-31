@@ -37,3 +37,20 @@ main {
 header h1 {
   text-align: center;
 }
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: blue;
+  display:flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+
+}
+h1 {
+  color: Orange;
+  font-size: 60px;
+}
+h2 {
+  color: blue;
+}
