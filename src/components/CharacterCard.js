@@ -1,8 +1,28 @@
 import React from "react";
+import styled from "styled-components";
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
-}
+export default function CharacterCard({data}) => {
+  return (
+  <div>
+    {data.map(data => {
+      return (
+        <CharacterListDiv>
+        <CharacterCardDiv key = {data.id}>
+          <h2>Name: {data.name}</h2>
+          <h3>Status: {data.status}</h3>
+          <h3>Species: {data.species}</h3>
+        </CharacterCardDiv>
+        </CharacterListDiv>
+      );
+    })}
 
 
-//Mandi: this page is good to go
+
+  </div>
+  )
+};
+
+export default CharacterCard;
+
+
+
