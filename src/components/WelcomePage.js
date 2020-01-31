@@ -14,3 +14,4 @@ export default function WelcomePage() {
     </section>
   );
 }
+// Mandi: this page is good for now

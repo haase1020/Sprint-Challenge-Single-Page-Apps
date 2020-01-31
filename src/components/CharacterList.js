@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import CharacterCard from "./CharacterCard";
+import SearchForm from "./SearchForm";
+
 
 export default function CharacterList() {
   const [data,setData]= useState([]); // Mandi: added useState
@@ -13,7 +16,7 @@ const [query, setQuery]=useState(""); //Mandi: added useState
     .get(`https://rickandmortyapi.com/api/character/`)
     .then(response => {
       console.log("this is the response",response);
-      const characters = response.data.filter(character =>
+      const characters = response.data.results.filter(character =>
         character.name.toLowerCase().includes(query.toLowerCase())
       );
       setData(characters);

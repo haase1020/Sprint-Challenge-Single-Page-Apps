@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function SearchForm() {
+
+const SearchForm = ({handleInputChange, query}) => {
 
   return (
-    <section className="search-form">
-      <form className ='search'>
+
+    <section>
+      <div>
+        <form className ="search">
         <input
-          type='text'
+          type= "text"
           onChange={handleInputChange}
           value={query}
-          name="name"
-          tabIndex="0"
-          autoComplete="off"
+          name= "name"
+          tabIndex= "0"
+          className = "prompt search-name"
+          placeholder = "search by name"
+          autoComplete= "off"
           />
       </form>
-     // Add a search form here
+      </div>
     </section>
   );
 }
