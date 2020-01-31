@@ -30,7 +30,8 @@ const [query, setQuery]=useState(""); //Mandi: added useState
 
   return (
     <div>
-      <h2>Find</h2>
+      
+      <h2>Search</h2>
       <SearchForm query = {query} handleInputChange = {handleInputChange}/>
       <CharacterCard data = {data}/>
     </div>
