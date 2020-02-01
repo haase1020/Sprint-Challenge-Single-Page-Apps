@@ -28,6 +28,14 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ x]  Explain benefit(s) using `client-side routing`?
 
 > Answer:
+Benefits of Client-Side Routing:
+
+
+Client-side routing is a JavaScript managed routing option. It offers control over your site URL & content without necessarily having to wait for a server to respond with content. It is designed to mimic the appearance of traditional multi page websites.
+
+What is server-side routing? It’s the way the web has worked for decades. Every link click & change of the address bar is a new request to a remote server. Every page load includes all page design elements, which must be re-downloaded. Including headers, navigation, sidebars, footers, etc. The server side routing method is not very efficient.
+
+When Routing is handled internally by the JavaScript that is already on the page, we achieve what is known as Client-side routing. And this tool is how we get things done today, especially in React! And the best part about this is that the page won’t refresh! The data is just there, displayed when we ask for it. How this works is that when a user clicks on a requested resource, instead of the client asking for that resource from the server via a URL, JavaScript will prevent this. We then get the resource (state) that is already available to us rendered out, and when using react, this happens beautifully through Component-Based Architecture.
 
 ## Project Set Up
 
@@ -40,8 +48,8 @@ Follow these steps to set up and work on your project:
 - [ x]  Implement the project on this branch, committing changes regularly.
 - [ x]  Push commits: `git push origin <firstName-lastName>`.
 - [ x]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
-- [ ]  **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
-- [ ]  **RUN** `yarn start` or `npm start` to fire up your React application.
+- [ x]  **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
+- [ x]  **RUN** `yarn start` or `npm start` to fire up your React application.
 
 ### Exceeded rate limits?
 
@@ -64,26 +72,26 @@ Construct a Single Page Application with React.
 **Your finished project must include all of the following requirements:**
 
 _Display Data from a Server API_
-- [ ]  Fetch a list of characters from the Rick and Morty API's Characters endpoint *`https://rickandmortyapi.com/api/character/`* and render them to the screen.
-- [ ]  You must display at least one element for each character.
+- [x ]  Fetch a list of characters from the Rick and Morty API's Characters endpoint *`https://rickandmortyapi.com/api/character/`* and render them to the screen.
+- [ x]  You must display at least one element for each character.
 
 _Add a Router to this application using [React Router](https://reacttraining.com/react-router/web/guides/quick-start)._
 
 - [ ]  Hook up the Welcome page(Home page) and a Characters page with React Router.
-- [ ]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: [s](https://react-bootstrap.github.io/)tyled-components or Reactstrap).
+- [ X]  Use a styling or component library for part of or all of your application. (Pick at least 1 of: [s](https://react-bootstrap.github.io/)tyled-components or Reactstrap).
 
 _Add 'Search by Name' feature._
 
-- [ ]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
-- [ ]  Create a search form that will filter through the data displayed in the character list.
+- [X ]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
+- [ X]  Create a search form that will filter through the data displayed in the character list.
 
 ### **Required best practices:**
 
-- [ ]  Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ]  Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ]  Consistent quotation usage.
-- [ ]  Spell-check.
-- [ ]  Schedule time to review, refine and reassess your work.
+- [X ]  Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [X ]  Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [X ]  Consistent quotation usage.
+- [X ]  Spell-check.
+- [X]  Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 

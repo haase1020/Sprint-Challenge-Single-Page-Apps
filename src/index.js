@@ -10,3 +10,6 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
+
+
+//Mandi: this page is good for now
